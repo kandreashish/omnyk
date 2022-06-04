@@ -4,7 +4,7 @@ services:
     image: mongo:5.0.8
     container_name: mongodb-omnyk-ashish
     volumes:
-      - ./ashish-vol2:/data/db
+      - ./ashish-vol2:/data
     ports:
       - "27017:27017"
   vector:
