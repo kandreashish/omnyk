@@ -2,12 +2,12 @@ version: "3.3"
 services:
   mongodb:
     image: mongo:5.0.8
-    container_name: mongodb-omnyk
+    container_name: mongodb-omnyk-ashish
     ports:
       - "27017:27017"
   vector:
     build: .
-    container_name: omnyk_service
+    container_name: omnyk_service-ashish
     volumes:
       - /home/ec2-user:/data/db
     ports:
