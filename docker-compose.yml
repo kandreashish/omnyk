@@ -9,7 +9,7 @@ services:
       - "27017:27017"
   vector:
     build: .
-    container_name: omnyk_service-ashish
+    container_name: omnykv2java
 
     ports:
       - "80:8080"
@@ -19,7 +19,7 @@ services:
       - mongodb
 
 volumes:
-  ashish-vol:          
+  ashish-vol:
 
 
 

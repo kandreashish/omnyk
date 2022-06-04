@@ -3,4 +3,7 @@ MAINTAINER ashish kashishcool144@gmail.com
 COPY src /home/app/src
 COPY pom.xml /home/app
 RUN mvn -f /home/app/pom.xml install package
-CMD ["java" ,"-cp", "target/*jar"]
+WORKDIR /home/app/
+CMD ["java","-jar","target/omnykV2.jar"]
+
+
