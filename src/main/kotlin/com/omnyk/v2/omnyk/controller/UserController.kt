@@ -38,7 +38,7 @@ class UserController {
 
     @GetMapping
     fun helloUser(): String {
-        return "Hello user"
+        return "Hello user lavanya . I love you babes"
     }
 
     @DeleteMapping("/delete")
