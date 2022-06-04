@@ -3,18 +3,20 @@ services:
   mongodb:
     image: mongo:5.0.8
     container_name: mongodb-omnyk-ashish
+    volumes:
+      - ashish-vol2:/home/ec2-user
     ports:
       - "27017:27017"
   vector:
     build: .
     container_name: omnyk_service-ashish
-    volumes:
-      - ashish-vol2:/data/db
+
     ports:
       - "80:8080"
     environment:
       - spring.data.mongodb.host=mongodb
     depends_on:
       - mongodb
+
 
 
