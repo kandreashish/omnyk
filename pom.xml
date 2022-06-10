@@ -96,7 +96,7 @@
 				</dependencies>
 			</plugin>
 		</plugins>
-		<finalName>omnykV2</finalName>
+		<finalName>omnykV3</finalName>
 	</build>
 
 </project>
