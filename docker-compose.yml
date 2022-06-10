@@ -8,6 +8,8 @@ services:
     build: .
     ports:
       - "8080:8080"
+    volumes:
+      - "./:/spring-boot"
     environment:
       - spring.data.mongodb.host=mongodb
     depends_on:
